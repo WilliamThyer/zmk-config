@@ -46,7 +46,7 @@
 // | CTRL | UNDO |  CUT | COPY | PASTE| PG DN|   | PLAY | RWND | FFWD | VOLDN| VOLUP | F12 |
 //                      |  ESC |      | BKSPC|   | SPACE|      | SHIFT|
                         bindings = <
-   &kp  TAB  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSPC
+   &trans &kp F1   &kp F2  &kp F3  &kp F4 &kp F5      &kp F6           &kp F7     &kp F8     &kp F9       &kp F10      &none
    &kp LCTRL &trans   &trans &trans   &trans   &trans      &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
    &kp LSHFT &trans   &trans &trans   &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
                     	     &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
