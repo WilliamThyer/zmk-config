@@ -48,7 +48,7 @@
                         bindings = <
    &trans &kp F1   &kp F2  &kp F3   &kp F4 &kp F5      &kp F6           &kp F7     &kp F8     &kp F9       &kp F10      &none
    &trans &kp HOME &kp END &kp LALT &none  &kp PG_UP   &kp LEFT         &kp DOWN   &kp UP     &kp RIGHT    &none        &kp F11
-   &trans &none    &none   &none    &none  &PG_DN      &kp C_PLAY_PAUSE &kp C_PREV &kp C_NEXT &kp C_VOL_DN &kp C_VOL_UP &kp F12 
+   &trans &none    &none   &none    &none  &kp PG_DN      &kp C_PLAY_PAUSE &kp C_PREV &kp C_NEXT &kp C_VOL_DN &kp C_VOL_UP &kp F12 
                     	     &trans  &trans  &trans   &trans   &trans    &trans
                         >;
                 };
