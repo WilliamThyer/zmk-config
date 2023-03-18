@@ -220,6 +220,20 @@
                         
                 }; 
 
+                altfuncfour: altfuncfour {
+                        compatible = "zmk,behavior-macro";
+                        label = "altfuncfour";
+                        #binding-cells = <0>;
+                        wait-ms = <30>;
+                        tap-ms = <40>;
+                        bindings  
+                                = <&macro_press &kp LALT>
+                                , <&macro_tap &kp F4>
+                                , <&macro_release &kp LALT>
+                                ;
+                        
+                }; 
+
         };
 
         conditional_layers {
@@ -263,16 +277,16 @@
 
                 raise_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB |      | ^W  |      |      |  ^T  |   | CTRL |  ALT |  TAB | WIN  |  RWND | FFWD|
+// |  TAB | DEL  | ^W  |      |      |  ^T  |   | CTRL |  ALT |  TAB | WIN  |  RWND | FFWD|
 // |  ESC | ^A   | ^S  | HOME |  END | PG UP|   | LFT  |  DWN |  UP  | RGHT |  VDWN | VUP |
 // | CTRL | UNDO | CUT | COPY | PASTE| PG DN|   | ^LFT | ^DWN | ^UP  | ^RGHT|  PLAY | SNIP|
 //                     | SHIFT| BKSPC|      |   |      | SPACE| ENTER|
 
                         bindings = <
-   &trans &none    &ctrlw &none    &none      &ctrlt         &kp LCTRL &kp LALT   &kp TAB    &kp LEFT_WIN  &kp C_PREV       &kp C_NEXT
-   &trans &ctrla   &ctrls &kp HOME &kp END    &kp PG_UP      &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT     &kp C_VOL_DN     &kp C_VOL_UP
-   &trans &undo    &cut   &copy    &paste     &kp PG_DN      &ctrlleft &ctrldown  &ctrlup    &ctrlright    &kp C_PLAY_PAUSE &screengrab
-                          &trans   &ctrlbkspc &trans         &trans    &trans     &trans
+   &trans &kp DEL  &ctrlw &sk LWIN &altfuncfour &ctrlt         &sk LCTRL &sk LALT   &kp TAB &none      &kp C_PREV       &kp C_NEXT
+   &trans &ctrla   &ctrls &kp HOME &kp END      &kp PG_UP      &kp LEFT  &kp DOWN   &kp UP  &kp RIGHT  &kp C_VOL_DN     &kp C_VOL_UP
+   &trans &undo    &cut   &copy    &paste       &kp PG_DN      &ctrlleft &ctrldown  &ctrlup &ctrlright &kp C_PLAY_PAUSE &screengrab
+                          &trans   &ctrlbkspc   &trans         &trans    &trans     &trans
                         >;
                 };
 
