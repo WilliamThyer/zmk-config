@@ -254,11 +254,10 @@
 // | CTRL |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  |  =   |
 //                    |SHIFT|BKSPC| NUM |   | NAV | SPACE|ENTER|
                         bindings = <
-   &kp TAB   &kp Q &kp W  &kp E     &kp R    &kp T      &kp Y &kp U     &kp I     &kp O   &kp P    &kp MINUS 
-   &kp ESC    &kp A &kp S &kp D     &kp F    &kp G      &kp H &kp J     &kp K     &kp L   &kp SEMI &kp SQT
-   &kp LCTRL  &kp Z &kp X &kp C     &kp V    &kp B      &kp N &kp M     &kp COMMA &kp DOT &kp FSLH &kp EQUAL
-                          &kp LSHFT &kp BKSP &mo 1      &mo 2 &kp SPACE &kp ENTER
-                        
+   &kp TAB   &kp Q &kp W  &kp E     &kp R    &kp T      &kp  Y &kp U     &kp I     &kp O   &kp P    &kp MINUS 
+   &kp ESC    &kp A &kp S &kp D     &kp F    &kp G      &kp  H &kp J     &kp K     &kp L   &kp SEMI &kp SQT
+   &kp LCTRL  &kp Z &kp X &kp C     &kp V    &kp B      &kp  N &kp M     &kp COMMA &kp DOT &kp FSLH &kp EQUAL
+                          &kp LSHFT &kp BKSP &sl 1      &tog 2 &kp SPACE &kp ENTER
                         >;
                 };
                 lower_layer {
@@ -289,7 +288,7 @@
                           &trans   &ctrlbkspc   &trans         &trans    &trans     &trans
                         >;
                 };
-
+                
                 tri_layer {
 // -----------------------------------------------------------------------------------------
 // |  TAB |  F1  |  F2  |  F3  |  F4  |  F5  |   |  F6  |  F7  |  F8  |  F9  |  F10  | F11   |
