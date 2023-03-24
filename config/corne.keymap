@@ -283,7 +283,7 @@
 
                         bindings = <
    &trans &kp DEL  &ctrlw &sk LWIN &altfuncfour &ctrlt         &sk LCTRL &sk LALT   &kp TAB &none      &kp C_PREV       &kp C_NEXT
-   &trans &ctrla   &ctrls &kp HOME &kp END      &kp PG_UP      &kp LEFT  &kp DOWN   &kp UP  &kp RIGHT  &kp C_VOL_DN     &kp C_VOL_UP
+   &tog 2 &ctrla   &ctrls &kp HOME &kp END      &kp PG_UP      &kp LEFT  &kp DOWN   &kp UP  &kp RIGHT  &kp C_VOL_DN     &kp C_VOL_UP
    &trans &undo    &cut   &copy    &paste       &kp PG_DN      &ctrlleft &ctrldown  &ctrlup &ctrlright &kp C_PLAY_PAUSE &screengrab
                           &trans   &ctrlbkspc   &trans         &trans    &trans     &trans
                         >;

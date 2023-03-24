@@ -19,7 +19,7 @@
       "h": 3,
       "d": true
     },
-    "Num + Nav:\n\nFunction\n\n\n\nIn Num layer, Win, Ctrl, and Alt are sticky (one shot)",
+    "Num + Nav:\n\nFunction\n\n\n\nNum, Win, Ctrl, and Alt are sticky. Nav is toggled.",
     {
       "x": 2.25,
       "t": "#000000\n#0000FF\n#008000\n#ff0000"
@@ -47,7 +47,7 @@
     "U\nAlt\n&\nF7",
     {
       "x": 1,
-      "t": "#000000\n#ffffff\n#008000\n#ff0000"
+      "t": "#000000\n\n#008000\n#ff0000"
     },
     "O\n\n(\nF9"
   ],
@@ -126,9 +126,9 @@
   [
     {
       "y": -0.8999999999999999,
-      "t": "#000000"
+      "t": "#000000\n#0000ff"
     },
-    "Esc",
+    "Esc\nNav",
     {
       "t": "#000000\n#0000FF\n#008000"
     },
