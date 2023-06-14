@@ -320,10 +320,10 @@
 
                 raise_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB | DEL  | ^W  | Win  |ALT+F4|  ^T  |   |  ALT  |  TAB  |TABL | TABR |  RWND | FFWD|
-// |  ESC | ^A   | ^S  | HOME |  END | PG UP|   |  LFT  |  DWN  | UP  | RGHT |  VDWN | VUP |
-// | CTRL | UNDO | CUT | COPY | PASTE| PG DN|   | ^LFT  | ^DWN  |^UP  | ^RGHT|  PLAY | SNIP|
-//                     | SHIFT| BKSPC|      |   |       | SPACE |ENTER|
+// |  TAB | DEL  | ^W  | Win  |ALT+F4|  ^T  |   |ALT+TAB|^SHFT+TAB|^TAB| WIN  |  RWND | FFWD|
+// |  ESC | ^A   | ^S  | HOME |  END | PG UP|   | LFT   |  DWN    | UP | RGHT |  VDWN | VUP |
+// | CTRL | UNDO | CUT | COPY | PASTE| PG DN|   | ^LFT  | ^DWN    |^UP | ^RGHT|  PLAY | SNIP|
+//                     | SHIFT| BKSPC|      |   |       | SPACE| ENTER|
 
                         bindings = <
    &trans &kp DEL  &ctrlw &sk LWIN   &altfuncfour &ctrlt         &kp LALT  &kp TAB   &ctrlshifttab &ctrltab   &kp C_PREV       &kp C_NEXT
