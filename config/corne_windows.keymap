@@ -17,9 +17,9 @@
                         wait-ms = <30>;
                         tap-ms = <40>;
                         bindings  
-                                = <&macro_press &kp LCMD>
+                                = <&macro_press &kp LCTRL>
                                 , <&macro_tap &kp C>
-                                , <&macro_release &kp LCMD>
+                                , <&macro_release &kp LCTRL>
                                 ;
                         
                 }; 
@@ -31,9 +31,9 @@
                         wait-ms = <30>;
                         tap-ms = <40>;
                         bindings  
-                                = <&macro_press &kp LCMD>
+                                = <&macro_press &kp LCTRL>
                                 , <&macro_tap &kp V>
-                                , <&macro_release &kp LCMD>
+                                , <&macro_release &kp LCTRL>
                                 ;
                         
                 }; 
@@ -45,9 +45,9 @@
                         wait-ms = <30>;
                         tap-ms = <40>;
                         bindings  
-                                = <&macro_press &kp LCMD>
+                                = <&macro_press &kp LCTRL>
                                 , <&macro_tap &kp X>
-                                , <&macro_release &kp LCMD>
+                                , <&macro_release &kp LCTRL>
                                 ;
                         
                 }; 
@@ -59,9 +59,9 @@
                         wait-ms = <30>;
                         tap-ms = <40>;
                         bindings  
-                                = <&macro_press &kp LCMD>
+                                = <&macro_press &kp LCTRL>
                                 , <&macro_tap &kp Z>
-                                , <&macro_release &kp LCMD>
+                                , <&macro_release &kp LCTRL>
                                 ;
                         
                 };
@@ -73,111 +73,111 @@
                         wait-ms = <30>;
                         tap-ms = <40>;
                         bindings  
-                                = <&macro_press &kp LCMD>
+                                = <&macro_press &kp LCTRL>
                                 , <&macro_tap &kp A>
-                                , <&macro_release &kp LCMD>
-                                ;
-                        
-                };
-
-                cmdw: cmdw {
-                        compatible = "zmk,behavior-macro";
-                        label = "cmdw";
-                        #binding-cells = <0>;
-                        wait-ms = <30>;
-                        tap-ms = <40>;
-                        bindings  
-                                = <&macro_press &kp LCMD>
-                                , <&macro_tap &kp W>
-                                , <&macro_release &kp LCMD>
-                                ;
-                        
-                };
-
-                cmdt: cmdt {
-                        compatible = "zmk,behavior-macro";
-                        label = "cmdt";
-                        #binding-cells = <0>;
-                        wait-ms = <30>;
-                        tap-ms = <40>;
-                        bindings  
-                                = <&macro_press &kp LCMD>
-                                , <&macro_tap &kp T>
-                                , <&macro_release &kp LCMD>
-                                ;
-                        
-                };
-
-                cmds: cmds {
-                        compatible = "zmk,behavior-macro";
-                        label = "cmds";
-                        #binding-cells = <0>;
-                        wait-ms = <30>;
-                        tap-ms = <40>;
-                        bindings  
-                                = <&macro_press &kp LCMD>
-                                , <&macro_tap &kp S>
-                                , <&macro_release &kp LCMD>
-                                ;
-                        
-                };
-
-                optdown: optdown {
-                        compatible = "zmk,behavior-macro";
-                        label = "optdown";
-                        #binding-cells = <0>;
-                        wait-ms = <30>;
-                        tap-ms = <40>;
-                        bindings  
-                                = <&macro_press &kp LCTRL>
-                                , <&macro_tap &kp PAGE_DOWN>
-                                , <&macro_release &kp LCMD>
-                                ;
-                        
-                };
-
-                optup: optup {
-                        compatible = "zmk,behavior-macro";
-                        label = "optup";
-                        #binding-cells = <0>;
-                        wait-ms = <30>;
-                        tap-ms = <40>;
-                        bindings  
-                                = <&macro_press &kp LCTRL>
-                                , <&macro_tap &kp PAGE_UP>
                                 , <&macro_release &kp LCTRL>
                                 ;
                         
                 };
 
-                optright: optright {
+                ctrlw: ctrlw {
                         compatible = "zmk,behavior-macro";
-                        label = "optright";
+                        label = "ctrlw";
                         #binding-cells = <0>;
                         wait-ms = <30>;
                         tap-ms = <40>;
                         bindings  
-                                = <&macro_press &kp LALT>
+                                = <&macro_press &kp LCTRL>
+                                , <&macro_tap &kp W>
+                                , <&macro_release &kp LCTRL>
+                                ;
+                        
+                };
+
+                ctrlt: ctrlt {
+                        compatible = "zmk,behavior-macro";
+                        label = "ctrlt";
+                        #binding-cells = <0>;
+                        wait-ms = <30>;
+                        tap-ms = <40>;
+                        bindings  
+                                = <&macro_press &kp LCTRL>
+                                , <&macro_tap &kp T>
+                                , <&macro_release &kp LCTRL>
+                                ;
+                        
+                };
+
+                ctrls: ctrls {
+                        compatible = "zmk,behavior-macro";
+                        label = "ctrls";
+                        #binding-cells = <0>;
+                        wait-ms = <30>;
+                        tap-ms = <40>;
+                        bindings  
+                                = <&macro_press &kp LCTRL>
+                                , <&macro_tap &kp S>
+                                , <&macro_release &kp LCTRL>
+                                ;
+                        
+                };
+
+                ctrlleft: ctrlleft {
+                        compatible = "zmk,behavior-macro";
+                        label = "ctrlleft";
+                        #binding-cells = <0>;
+                        wait-ms = <30>;
+                        tap-ms = <40>;
+                        bindings  
+                                = <&macro_press &kp LCTRL>
+                                , <&macro_tap &kp LEFT>
+                                , <&macro_release &kp LCTRL>
+                                ;
+                        
+                };
+
+                ctrldown: ctrldown {
+                        compatible = "zmk,behavior-macro";
+                        label = "ctrldown";
+                        #binding-cells = <0>;
+                        wait-ms = <30>;
+                        tap-ms = <40>;
+                        bindings  
+                                = <&macro_press &kp LCTRL>
+                                , <&macro_tap &kp DOWN>
+                                , <&macro_release &kp LCTRL>
+                                ;
+                        
+                };
+
+                ctrlup: ctrlup {
+                        compatible = "zmk,behavior-macro";
+                        label = "ctrlup";
+                        #binding-cells = <0>;
+                        wait-ms = <30>;
+                        tap-ms = <40>;
+                        bindings  
+                                = <&macro_press &kp LCTRL>
+                                , <&macro_tap &kp UP>
+                                , <&macro_release &kp LCTRL>
+                                ;
+                        
+                };
+
+                ctrlright: ctrlright {
+                        compatible = "zmk,behavior-macro";
+                        label = "ctrlright";
+                        #binding-cells = <0>;
+                        wait-ms = <30>;
+                        tap-ms = <40>;
+                        bindings  
+                                = <&macro_press &kp LCTRL>
                                 , <&macro_tap &kp RIGHT>
-                                , <&macro_release &kp LALT>
+                                , <&macro_release &kp LCTRL>
                                 ;
                         
                 }; 
 
-                optleft: optleft {
-                        compatible = "zmk,behavior-macro";
-                        label = "optleft";
-                        #binding-cells = <0>;
-                        wait-ms = <30>;
-                        tap-ms = <40>;
-                        bindings  
-                                = <&macro_press &kp LALT>
-                                , <&macro_tap &kp LEFT>
-                                , <&macro_release &kp LALT>
-                                ;
-                        
-                }; 
-                
                 ctrlbkspc: ctrlbkspc {
                         compatible = "zmk,behavior-macro";
                         label = "ctrlbkspc";
@@ -199,37 +199,51 @@
                         wait-ms = <30>;
                         tap-ms = <40>;
                         bindings  
-                                = <&macro_press &kp LCMD &kp LSHIFT>
-                                , <&macro_tap &kp 4>
-                                , <&macro_release &kp LCMD &kp LSHIFT>
+                                = <&macro_press &kp LGUI &kp LSHIFT>
+                                , <&macro_tap &kp S>
+                                , <&macro_release &kp LGUI &kp LSHIFT>
                                 ;
                         
                 }; 
 
-                cmdenter: cmdenter {
+                ctrlenter: ctrlenter {
                         compatible = "zmk,behavior-macro";
-                        label = "cmdenter";
+                        label = "ctrlenter";
                         #binding-cells = <0>;
                         wait-ms = <30>;
                         tap-ms = <40>;
                         bindings  
-                                = <&macro_press &kp LCMD>
+                                = <&macro_press &kp LCTRL>
                                 , <&macro_tap &kp ENTER>
-                                , <&macro_release &kp LCMD>
+                                , <&macro_release &kp LCTRL>
                                 ;
                         
                 }; 
 
-                quit: quit {
+                altfuncfour: altfuncfour {
                         compatible = "zmk,behavior-macro";
-                        label = "quit";
+                        label = "altfuncfour";
                         #binding-cells = <0>;
                         wait-ms = <30>;
                         tap-ms = <40>;
                         bindings  
-                                = <&macro_press &kp LCMD>
-                                , <&macro_tap &kp Q>
-                                , <&macro_release &kp LCMD>
+                                = <&macro_press &kp LALT>
+                                , <&macro_tap &kp F4>
+                                , <&macro_release &kp LALT>
+                                ;
+                        
+                }; 
+
+                alttab: alttab {
+                        compatible = "zmk,behavior-macro";
+                        label = "alttab";
+                        #binding-cells = <0>;
+                        wait-ms = <30>;
+                        tap-ms = <40>;
+                        bindings  
+                                = <&macro_press &kp LALT>
+                                , <&macro_tap &kp TAB>
+                                , <&macro_release &kp LALT>
                                 ;
                         
                 }; 
@@ -281,41 +295,41 @@
 // -----------------------------------------------------------------------------------------
 // | TAB  |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  |  -   |
 // | ESC  |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-// | CMD  |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  |  =   |
+// | CTRL |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  |  =   |
 //                    |SHIFT|BKSPC| NUM |   | NAV | SPACE|ENTER|
                         bindings = <
-   &kp TAB   &kp Q &kp W &kp E     &kp R    &kp T      &kp  Y &kp U     &kp I     &kp O   &kp P    &kp MINUS 
-   &kp ESC   &kp A &kp S &kp D     &kp F    &kp G      &kp  H &kp J     &kp K     &kp L   &kp SEMI &kp SQT
-   &kp LCMD  &kp Z &kp X &kp C     &kp V    &kp B      &kp  N &kp M     &kp COMMA &kp DOT &kp FSLH &kp EQUAL
-                         &kp LSHFT &kp BKSP &sl 1      &sl 2  &kp SPACE &kp ENTER
+   &kp TAB   &kp Q &kp W  &kp E     &kp R    &kp T      &kp  Y &kp U     &kp I     &kp O   &kp P    &kp MINUS 
+   &kp ESC    &kp A &kp S &kp D     &kp F    &kp G      &kp  H &kp J     &kp K     &kp L   &kp SEMI &kp SQT
+   &kp LCTRL  &kp Z &kp X &kp C     &kp V    &kp B      &kp  N &kp M     &kp COMMA &kp DOT &kp FSLH &kp EQUAL
+                          &kp LSHFT &kp BKSP &sl 1      &sl 2 &kp SPACE &kp ENTER
                         >;
                 };
                 lower_layer {
 // -----------------------------------------------------------------------------------------
 // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  |  |   |
 // |  ESC |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  |  '   |
-// | CMD  | ESC |  ~  |  `  |  {  |  }  |   |  [  |  ]  |  ,  |  .  |  /  |  \   |
+// | CTRL | ESC |  ~  |  `  |  {  |  }  |   |  [  |  ]  |  ,  |  .  |  /  |  \   |
 //                    |SHIFT|BKSPC|     |   |     |SPACE|ENTER|
                         bindings = <
    &trans  &kp EXCL &kp AT    &kp HASH  &kp DLLR &kp PRCNT   &kp CARET &kp AMPS &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp PIPE
    &trans  &kp N1   &kp N2    &kp N3    &kp N4   &kp N5      &kp N6    &kp N7   &kp N8          &kp N9   &kp N0   &trans
    &trans  &kp ESC  &kp TILDE &kp GRAVE &kp LBRC &kp RBRC    &kp LBKT  &kp RBKT &trans          &trans   &trans   &kp BSLH
-                              &trans    &trans   &trans      &trans    &trans   &cmdenter
+                              &trans    &trans   &trans      &trans    &trans   &ctrlenter
                         >;
                 };
 
                 raise_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB | DEL  | ^W  | Win  | QUIT |  ^T  |   |  ALT  |  TAB  | ^_Tab| ^_Tab |  RWND | FFWD|
-// |  ESC | ^A   | ^S  | HOME |  END | PG UP|   | LFT   |  DWN  | UP   | RGHT  |  VDWN | VUP |
-// | CMD  | UNDO | CUT | COPY | PASTE| PG DN|   | ^LFT  | ^DWN  |^UP   | ^RGHT |  PLAY | SNIP|
-//                     | SHIFT| BKSPC|      |   |       | SPACE | ENTER|
+// |  TAB | DEL  | ^W  | Win  |ALT+F4|  ^T  |   |ALT+TAB|^SHFT+TAB|^TAB| WIN  |  RWND | FFWD|
+// |  ESC | ^A   | ^S  | HOME |  END | PG UP|   | LFT   |  DWN    | UP | RGHT |  VDWN | VUP |
+// | CTRL | UNDO | CUT | COPY | PASTE| PG DN|   | ^LFT  | ^DWN    |^UP | ^RGHT|  PLAY | SNIP|
+//                     | SHIFT| BKSPC|      |   |       | SPACE| ENTER|
 
                         bindings = <
-   &trans &kp DEL  &ctrlw &sk LWIN &quit      &ctrlt         &kp LALT  &kp TAB   &ctrlshifttab &ctrltab   &kp C_PREV       &kp C_NEXT
-   &trans &ctrla   &ctrls &kp HOME &kp END    &kp PG_UP      &kp LEFT  &kp DOWN  &kp UP        &kp RIGHT  &kp C_VOL_DN     &kp C_VOL_UP
-   &trans &undo    &cut   &copy    &paste     &kp PG_DN      &optleft  &optdown  &optup        &optright  &kp C_PLAY_PAUSE &screengrab
-                          &trans   &ctrlbkspc &trans         &trans    &trans    &trans
+   &trans &kp DEL  &ctrlw &sk LWIN &altfuncfour &ctrlt         &kp LALT  &kp TAB   &ctrlshifttab &ctrltab   &kp C_PREV       &kp C_NEXT
+   &trans &ctrla   &ctrls &kp HOME &kp END      &kp PG_UP      &kp LEFT  &kp DOWN  &kp UP        &kp RIGHT  &kp C_VOL_DN     &kp C_VOL_UP
+   &trans &undo    &cut   &copy    &paste       &kp PG_DN      &ctrlleft &ctrldown &ctrlup       &ctrlright &kp C_PLAY_PAUSE &screengrab
+                          &trans   &ctrlbkspc   &trans         &trans    &trans    &trans
                         >;
                 };
 
@@ -323,7 +337,7 @@
 // -----------------------------------------------------------------------------------------
 // |  TAB |  F1  |  F2  |  F3  |  F4  |  F5  |   |  F6  |  F7  |  F8  |  F9  |  F10  | F11   |
 // |  ESC |      |      |      |      |      |   |      |      |      |      |       | F12   |
-// | CMD  |      |      |      |      |      |   |      |      |      |      |       | BTNXT |
+// | CTRL |      |      |      |      |      |   |      |      |      |      |       | BTNXT |
 //                      | SHIFT| BKSPC|      |   |      | SPACE| ENTER|
                         bindings = <
    &trans &kp F1 &kp F2 &kp F3 &kp F4 &kp F5      &kp F6  &kp F7 &kp F8 &kp F9 &kp F10 &kp F11
